@@ -1,0 +1,7 @@
+@function calc-hover-color($color, $amount) {
+    $final_color: $color;
+    $final_color: saturate( $final_color, $amount);
+    $final_color: adjust-hue( $final_color, $amount);
+    $final_color: darken($final_color, $amount);
+    @return $final_color;
+  }

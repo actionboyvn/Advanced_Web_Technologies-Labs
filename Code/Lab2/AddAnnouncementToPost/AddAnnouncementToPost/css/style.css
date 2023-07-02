@@ -1,0 +1,15 @@
+
+.aatp_marker{
+    color: white;
+    margin-left: 10px;
+    background-color: rgb(228, 212, 180);
+    padding: 1px 10px;
+    border-radius: 5px;
+    font-size: 0.5em;
+    font-style: normal;
+    color: black;
+    }
+   article .aatp_marker{
+    display: inline;
+   } 
+   

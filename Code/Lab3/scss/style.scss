@@ -1,0 +1,77 @@
+@import './variables';
+@import './functions';
+@import './mixins';
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: linear-gradient(#e66465, #9198e5);
+}
+nav {
+    display: flex;
+    padding: 0% 6%;    
+    justify-content: space-between;
+    align-items: center;
+    img {
+        width: 150px;
+    }
+}
+.nav-links {
+    flex: 1;
+    text-align: $nav-button-alignment;
+    ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 20px 10px;
+        position: relative;
+        //background: linear-gradient(to top, $nav-bar-color 50%, $nav-button-color 50%) bottom;
+        background-size: 300% 200%;
+        transition: 0.5s;
+        a {
+            font-size: large;
+            text-decoration: none;
+            color: $nav-button-text-color;
+        }
+        &:hover {
+            background-position: top;          
+        }
+    }
+}
+  
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: $default-button-color;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 30%; 
+    @include center-element();
+    &:hover {
+      background-color: calc-hover-color($default-button-color, 20%);
+    }
+  }
+
+.button_important {
+  @extend .button;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  box-shadow: 0px 0px 50px 10px green;
+}
+
+.photo-grid {
+    @include grid(3, 30px);
+    img {
+        width: 300px;
+        height: 150px;
+        display: block;
+        border-radius: 20px;       
+        @include center-element();
+    }
+    p {
+        text-align: center;
+    }
+  }

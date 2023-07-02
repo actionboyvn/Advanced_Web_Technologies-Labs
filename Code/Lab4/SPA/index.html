@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>SPA</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet"
+    />
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css"> 
+    
+    <link rel="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+        type="text/javascript"
+      ></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
+
+  </head>
+  <body>
+    <!-- Start your project here-->
+    <!--Main Navigation-->
+    <header>
+      <!--Navbar-->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">     
+        <div class="container">
+        <!-- Navbar brand -->
+          <a class="navbar-brand" href="#">Travel Blog</a>
+          <!-- Collapse button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" arialabel="Toggle navigation">          
+            <span><img src="img/menu-toggle-icon.jpg" height="50" width="50"></span>
+          </button>
+          <!-- Collapsible content -->
+          <div class="collapse navbar-collapse" id="basicExampleNav">
+          <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link active" href="#">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#lastTravels">Travels</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#maps">Map</a>
+              </li>
+                <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" 
+                aria-haspopup="true" aria-expanded="false" role="button">More</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#textWithImage">Text With Image</a>
+                <a class="dropdown-item" href="#quotes">Quotes</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#FAQ">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#carousel">Carousel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#chart">Chart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Links -->
+          <form class="form-inline">
+            <div class="md-form my-0">
+              <input class="form-control mr-sm2" type="text" placeholder="Search" aria-label="Search">
+            </div>
+          </form> 
+        </div>   
+      </nav>
+      <!--Mask-->
+      <div id="intro" class="view">
+        <div class="mask rgba-stylish-strong">
+          <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+            <div class="row d-flex justify-content-center text-center">
+              <div class="col-md-10">
+                <!-- Heading -->
+                <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">Podróżowanie</h2>
+                <!-- Divider -->
+                <hr class="hr-light">
+                <!-- Description -->
+                <h4 class="white-text my4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti consequuntur.</h4>
+                <button type="button" class="btn btn-outlinewhite">Dowiedz się więcej<i class="fas fa-book ml-2"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Main layout-->
+    <main class="mt-5">
+      <div class="container">
+      <!--Section: LastTravels-->
+      <section id="lastTravels">
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="shadow z-3">
+              <img src="img/trip1.jpg" class="img-fluid" alt="">
+              <a href="#!">
+              <div class="mask rgba-blue-light"></div>
+              </a>
+              </div>
+              <h4 class="my-4" style="text-align: center;">Podróż 1</h4>
+              <p class="grey-text" style="text-align: center;">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores n
+             am, aperiam minima assumenda deleniti hic.
+              </p>
+          </div>
+          <!--Grid column-->
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="shadow z-3">
+              <img src="img/trip1.jpg" class="img-fluid" alt="">
+            </div>
+            <h4 class="my-4" style="text-align: center;">Podróż 2</h4>
+              <p class="grey-text" style="text-align: center;">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores n
+             am, aperiam minima assumenda deleniti hic.
+              </p>
+          </div>
+          <!--Grid column-->
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="shadow z-3">
+              <img src="img/trip1.jpg" class="img-fluid" alt="">
+            </div>
+            <h4 class="my-4" style="text-align: center;">Podróż 3</h4>
+              <p class="grey-text" style="text-align: center;">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores n
+             am, aperiam minima assumenda deleniti hic.
+              </p>
+          </div>
+          <!--Grid column-->
+          </div>
+          <!--Grid row-->
+          <!--Grid row-->
+          <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="shadow z-3">
+              <img src="img/trip1.jpg" class="img-fluid" alt="">
+            </div>
+            <h4 class="my-4" style="text-align: center;">Podróż 4</h4>
+              <p class="grey-text" style="text-align: center;">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores n
+             am, aperiam minima assumenda deleniti hic.
+              </p>
+          </div>
+          <!--Grid column-->
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="shadow z-3">
+              <img src="img/trip1.jpg" class="img-fluid" alt="">
+            </div>
+            <h4 class="my-4" style="text-align: center;">Podróż 5</h4>
+              <p class="grey-text" style="text-align: center;">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores n
+             am, aperiam minima assumenda deleniti hic.
+              </p>
+          </div>
+          <!--Grid column-->
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="shadow z-3">
+              <img src="img/trip1.jpg" class="img-fluid" alt="">
+            </div>
+            <h4 class="my-4" style="text-align: center;">Podróż 6</h4>
+              <p class="grey-text" style="text-align: center;">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores n
+             am, aperiam minima assumenda deleniti hic.
+              </p>
+          </div>
+          <!--Grid column-->
+          </div>
+          <!--Grid row-->
+      </section>
+      <!--Section: LastTravels-->
+      <hr class="my-5">
+      <!--Section: Gallery-->
+      <section id="maps">
+        <h3>Find us on Google Maps</h3>
+        <iframe
+          width="100%"
+          height="550"
+          style="box-shadow: black 0 5px 15px;"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC8vWkO6c2XfSpXEYXjqIHC3SzByQOIEkg
+            &q=PWr">
+        </iframe>
+      </section>
+
+      <hr id="textWithImage" class="my-5">
+
+      <section>
+        <h3  >Make your dream come true</h3>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="shadow z-3">
+              <img src="img/trip2.jpg" style="width:100%">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            </p>
+          </div>
+      </div>
+      </section>
+
+      <hr class="my-5">
+
+      <section id="quotes" class="bg-light">
+        <div class="container py-5">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-12 col-xl-12">
+              <div class="card text-white" style="background-color: #1f959b; border-radius: 15px;">
+                <div class="card-body p-5">   
+                  <i class="fas fa-quote-left fa-2x mb-4"></i>    
+                  <p class="lead">The world is a book and those who do not travel read only one page.</p> 
+                  <hr>
+                  <div class="d-flex justify-content-between">
+                    <p class="mb-0">Thomas Edison</p>
+                    <h6 class="mb-0"><span class="badge rounded-pill"
+                        style="background-color: rgba(0,0,0, 0.2);">876</span> <i class="fas fa-heart ms-2"></i>
+                    </h6>
+                  </div>     
+                </div>
+              </div>   
+              <br>
+              <div class="col-md-12 col-xl-12">
+                <div class="card text-white" style="background-color: chocolate; border-radius: 15px;">
+                  <div class="card-body p-5">   
+                    <i class="fas fa-quote-left fa-2x mb-4"></i>    
+                    <p class="lead">Genius is one percent inspiration and ninety-nine percent perspiration.</p> 
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                      <p class="mb-0">Thomas Edison</p>
+                      <h6 class="mb-0"><span class="badge rounded-pill"
+                          style="background-color: rgba(0,0,0, 0.2);">1198</span> <i class="fas fa-heart ms-2"></i>
+                      </h6>
+                    </div>     
+                  </div>
+                </div>   
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <hr class="my-5">
+    <section id="FAQ">
+          <h2>FAQ - Najczęściej zadawane pytania</h2>
+      <div class="accordion" id="accordionExampleY">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOneY">
+            <button class="accordion-button" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseOneY"
+              aria-expanded="true" aria-controls="collapseOneY">
+              <i class="fas fa-question-circle fa-sm me-2 opacity-70"></i>Ile kosztuje wycieczka?
+            </button>
+          </h2>
+          <div id="collapseOneY" class="accordion-collapse collapse show" aria-labelledby="headingOneY"
+            data-mdb-parent="#accordionExampleY">
+            <div class="accordion-body">
+              <strong>To zależy.</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error incidunt autem, ipsam iste magnam rem sed labore voluptate quis omnis quasi accusamus a nostrum ipsa officia ducimus placeat. Corrupti hic ipsa autem impedit voluptate, minima cupiditate. Suscipit blanditiis nobis fugiat vel itaque iusto libero non, ducimus illum, quis modi similique id. Libero, repellendus minima incidunt necessitatibus earum dolores eaque pariatur iusto veniam hic rerum voluptatem, provident at labore nobis temporibus sit distinctio blanditiis facilis ad quaerat! Harum nesciunt est odio reiciendis ullam doloribus delectus, asperiores velit inventore sunt et itaque error sed eaque laborum voluptatibus sint at, qui laudantium obcaecati!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwoY">
+            <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+              data-mdb-target="#collapseTwoY" aria-expanded="false" aria-controls="collapseTwoY">
+              <i class="fas fa-question-circle fa-sm me-2 opacity-70"></i>Gdzie mogę znaleźć dodatkowe informacje o hotelu?
+            </button>
+          </h2>
+          <div id="collapseTwoY" class="accordion-collapse collapse" aria-labelledby="headingTwoY"
+            data-mdb-parent="#accordionExampleY">
+            <div class="accordion-body">
+              <strong>Po wybraniu konkretnego celu podróży.</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae quos esse sit, quis pariatur inventore, dolorum eaque recusandae illo ut soluta quibusdam! Voluptatibus quam, harum minus impedit accusamus ducimus ut officia fugiat, nam adipisci perspiciatis. Magnam nesciunt temporibus ad necessitatibus atque porro iusto accusantium. Deleniti voluptas obcaecati deserunt fuga facere recusandae autem modi alias voluptate fugit doloribus omnis ratione, earum aliquam laborum laudantium veniam, maxime sequi eos totam, dolor aspernatur et? Sint maxime assumenda veniam officia nulla, perferendis totam sapiente iste tempore rerum vero doloribus esse id laboriosam suscipit ipsum minus accusamus aperiam cumque eum recusandae ipsam labore blanditiis? Itaque obcaecati ipsum, laudantium beatae omnis quo! Dolore quisquam numquam, dolores sed iure esse recusandae voluptatibus obcaecati, impedit molestias, distinctio nesciunt minus ex unde nisi laboriosam harum beatae! Eius quasi vitae maxime dolores eum itaque, quam dicta! Quis, perspiciatis saepe nobis quae atque molestiae enim tenetur perferendis quo! Doloremque excepturi nobis voluptas, deserunt fuga exercitationem quas maiores a sunt in doloribus iste quibusdam reiciendis dolores nulla magnam voluptatibus iusto odit blanditiis! Maiores itaque nobis aut ullam blanditiis! Ut odio veritatis asperiores quod tenetur? Voluptates, maiores, reiciendis nostrum odit qui ullam tempore dolore expedita delectus aspernatur cupiditate incidunt doloremque iste quia voluptatibus.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThreeY">
+            <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+              data-mdb-target="#collapseThreeY" aria-expanded="false" aria-controls="collapseThreeY">
+              <i class="fas fa-question-circle fa-sm me-2 opacity-70"></i>Jak mogę się z wami skontaktować?
+            </button>
+          </h2>
+          <div id="collapseThreeY" class="accordion-collapse collapse" aria-labelledby="headingThreeY"
+            data-mdb-parent="#accordionExampleY">
+            <div class="accordion-body">
+              <strong>Skorzystaj z naszego formularza kontaktowego.</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis non itaque magni maiores. At atque dolores id animi, exercitationem porro rem in corrupti? Amet non placeat molestiae debitis deserunt alias officiis explicabo aut laboriosam fuga saepe suscipit veniam ullam tempore corrupti aliquid, eligendi harum ea velit, esse reiciendis praesentium. Sunt atque iure fugit cum error? Expedita quidem doloribus provident dignissimos, odio voluptas officiis rem perferendis sint quia iusto pariatur rerum architecto molestias, deleniti accusantium vitae itaque error! Quae delectus dicta placeat, animi ullam aliquid culpa maxime. Maxime quo illum obcaecati voluptatem hic ab delectus odio ipsum ad corrupti commodi, ratione, eos iure minus. Nemo labore quas quos consequuntur nam officiis odit officia? Quam magnam quos aliquam reprehenderit hic, fugit aspernatur nemo! Molestias, debitis! Nam accusantium labore, unde aperiam, obcaecati sint quas voluptates cumque animi rem reiciendis eos, nobis iste eligendi itaque! Earum, recusandae sapiente! Asperiores accusamus cupiditate alias sapiente atque.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <hr class="my-5">
+  <section id="carousel">
+  <!-- Carousel wrapper -->
+  <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Inner -->
+    <div class="carousel-inner">
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <img src="https://www.pixelstalk.net/wp-content/uploads/2015/03/beach-wallpaper-1920x1080.jpg" class="d-block w-100"
+          alt="Sunset Over the City" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Malediwy</h5>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor dignissimos blanditiis quibusdam tenetur atque est iusto laudantium, possimus odit impedit?</p>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <img src="https://www.pixelstalk.net/wp-content/uploads/2015/05/Plane-on-the-beach.jpg" class="d-block w-100"
+          alt="Canyon at Nigh" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Tajlandia</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, voluptate!</p>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <img src="https://wallpapercave.com/wp/wp3250450.jpg" class="d-block w-100"
+          alt="Cliff Above a Stormy Sea" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Chorwacja</h5>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi necessitatibus voluptates omnis, ea incidunt ipsa!.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Inner -->
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Carousel wrapper -->
+</section>
+
+  <hr class="my-5">
+  <section id="chart">
+        <div class="container">
+          <h2>Najpopularniejsze kierunki</h2>
+          <div>
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+
+        <script>
+          var ctx = document.getElementById("myChart").getContext("2d");
+          var myChart = new Chart(ctx, {
+            type: "bar",
+            data: {
+              labels: [
+                "Chorwacja",
+                "Turcja",
+                "Egipt",
+                "Malediwy",
+                "Hiszpania",
+                "Francja",
+              ],
+              datasets: [
+                {
+                  label: "Popularność w %",
+                  data: [15, 17, 16, 7, 12, 13, 0, 25],
+                  backgroundColor: "rgba(153,205,1,0.6)",
+                }/*,
+                {
+                  label: "Państwo",
+                  data: [2, 2, 5, 5, 2, 1, 10],
+                  backgroundColor: "rgba(155,153,10,0.6)",
+                },*/
+              ],
+            },
+          });
+        </script>
+      </section>
+    </div>
+    </main>
+    <!--Main layout-->
+    <!--Footer-->
+    <footer>
+      <br>
+      <section id="contact">
+      <div class="container" style="background-color: rgb(219, 198, 141);box-shadow: black 0 5px 15px;">  
+        <!--Section: Contact v.2-->
+          <section class="mb-4 center-items">
+      
+            <!--Section heading-->
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Napisz do nas</h2>
+            <!--Section description-->
+            <p class="text-center w-responsive mx-auto mb-5">Jeśli masz jakieś pytania, napisz do nas wiadomość. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur beatae sapiente praesentium, velit blanditiis cum, nemo ipsum eos hic eaque labore ratione optio id odio molestias distinctio quam error laboriosam quae? Voluptate similique accusantium eius! Suscipit repudiandae molestiae.</p>
+      
+            <div class="row">
+      
+              <!--Grid column-->
+              <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="#" method="POST">
+      
+                  <!--Grid row-->
+                  <div class="row">
+      
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="text" id="name" name="name" class="form-control">
+                        <label for="name" class="">Imię</label>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+      
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="text" id="email" name="email" class="form-control">
+                        <label for="email" class="">Adres email</label>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+      
+                  </div>
+                  <!--Grid row-->
+      
+                  <!--Grid row-->
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="md-form mb-0">
+                        <input type="text" id="subject" name="subject" class="form-control">
+                        <label for="subject" class="">Temat</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Grid row-->
+      
+                  <!--Grid row-->
+                  <div class="row">
+      
+                    <!--Grid column-->
+                    <div class="col-md-12">
+      
+                      <div class="md-form">
+                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                        <label for="message">Treść wiadomości</label>
+                      </div>
+      
+                    </div>
+                  </div>
+                  <!--Grid row-->
+      
+                </form>
+      
+                <div class="text-center text-md-left">
+                  <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Wyślij</a>
+                </div>
+                <div class="status"></div>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                  <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Wyspiańskiego 27, Wrocław</p>
+                  </li>
+      
+                  <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+ 48 234 567 892</p>
+                  </li>
+      
+                  <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>contact@pwr.edu.com</p>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+      
+            </div>
+      
+          </section>
+          <!--Section: Contact v.2-->
+        </div>
+        <br>
+      </section>
+    </footer>
+    <!--Footer-->
+    <!-- End your project here-->
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+    
+    <!-- Your custom scripts (optional) -->
+    
+  </body>
+</html>

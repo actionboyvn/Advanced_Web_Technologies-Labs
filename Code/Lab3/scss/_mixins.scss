@@ -1,0 +1,16 @@
+@mixin center-element() {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+}
+@mixin grid($columns, $space) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 #{$space / 2};
+    
+    > * {
+        flex: calc((100% - #{$space} * #{$columns} ) / #{$columns});
+        margin: #{$space} #{$space / 2} #{$space} #{$space / 2};        
+    }
+}
